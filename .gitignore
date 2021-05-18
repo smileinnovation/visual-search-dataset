@@ -1,0 +1,12 @@
+.idea/
+.DS_Store
+**/images
+**/node_modules
+visualgenome/metadata/objects.json
+visualgenome/metadata/object_synsets.json
+openimage/metadata/oidv6-train-annotations-bbox.csv
+openimage/metadata/validation-annotations-bbox.csv
+openimage/metadata/test-annotations-bbox.csv
+imagenet/metadata/LOC_train_solution.csv
+imagenet/metadata/LOC_val_solution.csv
+

@@ -1,0 +1,19 @@
+{
+	"visualgenome":{
+		"screwdriver":["screwdriver.n.01"],
+		"hammer":["hammer.n.01"],
+		"paintbrush":["paintbrush.n.01"]
+	},
+	"openimage":{
+		"drill":["/m/01d380"],
+		"screwdriver":["/m/01bms0"],
+		"hammer":["/m/03l9g"]
+	},
+	"imagenet":{
+		"drill":["n03995372"],
+		"screwdriver":["n04154565"],
+		"hammer":["n03481172"],
+		"wheelbarrow":["n02797295"],
+		"paintbrush":["n03876231"]
+	}
+}
