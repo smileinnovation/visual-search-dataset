@@ -10,7 +10,7 @@ const datasets = [
     require('./datasets/visualgenome_coco-dataset-train.json'),
 ];
 
-const licenses = [datasets[0].licenses, datasets[2].licenses, ].flat()//datasets[5].licenses].flat();
+const licenses = [datasets[0].licenses, datasets[2].licenses, datasets[5].licenses].flat();
 const categoriesIds = {}
 const newCategories = datasets[0].categories.map((category, index) => {
     categoriesIds[category.id] = index;

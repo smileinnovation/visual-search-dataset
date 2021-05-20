@@ -38,7 +38,7 @@ class CocoLicense {
 
 class CocoAnnotation {
     constructor({id, image_id, category_id, bbox, iscrowd= 0}) {
-        Object.assign(this, {id, image_id, category_id, bbox, iscrowd});
+        Object.assign(this, {id, image_id, category_id, bbox, iscrowd, segmentation:[]});
     }
 }
 
