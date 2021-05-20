@@ -48,14 +48,14 @@ const toCoco = (synsets) => {
             tuples.images.push(new CocoImage({id:imageIdWithDSPrefix, license:1, file_name:`${imageIdWithDSPrefix}.jpg`, url:image.url, height:image.height, width:image.width}));
         }
 
-        tuples.annotations.push(objects.map(o => new CocoAnnotation({
+        const newAnnotations = objects.map(o => new CocoAnnotation({
             id:o.object_id,
             image_id:imageIdWithDSPrefix,
             category_id:cocoCategories.find(c => c.name === o.synsets[0]).id || o.synsets[0],
             // The COCO bounding box format is [top left x position, top left y position, width, height].
             bbox:[o.x, o.y, o.w, o.h]
-        })));
-
+        }));
+        tuples.annotations = tuples.annotations.concat(newAnnotations);
         return tuples;
     }, {images:[], annotations:[]});
 
