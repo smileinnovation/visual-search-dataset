@@ -13,8 +13,8 @@ function hash(str) {
 }
 
 class CocoImage {
-    constructor({id, license, file_name, url, height, width}) {
-        Object.assign(this, {id, license, file_name, url, height, width});
+    constructor({id, license, file_name, url, height, width, date_captured = '2021-05-21 00:00:00'}) {
+        Object.assign(this, {id, license, file_name, url, height, width, date_captured});
     }
 }
 
